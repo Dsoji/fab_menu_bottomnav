@@ -3,22 +3,34 @@ import 'package:flutter/material.dart';
 
 class NaviBar extends StatefulWidget {
   final Color fabColor;
-  final List<BottomNav> bottomNavItems;
+  // final List<BottomNav> bottomNavItems;
   final List<FabCont> fabItems;
   final List<Widget> routeList;
   final Color navBarColor;
   final Color fabIconColor;
+  final Color navIconColor;
+  final double navIconSize;
+  final IconData navIcon1;
+  final IconData navIcon2;
+  final IconData navIcon3;
+  final IconData navIcon4;
   // final String? email;
   // final String? firstName;
   // final String? lastName;
   const NaviBar({
     super.key,
     required this.fabColor,
-    required this.bottomNavItems,
+    // required this.bottomNavItems,
     required this.fabItems,
     required this.navBarColor,
     required this.fabIconColor,
     required this.routeList,
+    required this.navIconSize,
+    required this.navIcon1,
+    required this.navIcon2,
+    required this.navIcon3,
+    required this.navIcon4,
+    required this.navIconColor,
   });
 
   @override
@@ -73,7 +85,48 @@ class _NaviBarState extends State<NaviBar> {
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: widget.bottomNavItems,
+          children: [
+            BottomNav(
+              index: 0,
+              onTap: () {
+                changePage(0);
+              },
+              label: 'Home',
+              color: pageIndex == 0 ? widget.navIconColor : Colors.grey,
+              size: widget.navIconSize,
+              icon: widget.navIcon1,
+            ),
+            BottomNav(
+              index: 0,
+              onTap: () {
+                changePage(1);
+              },
+              label: 'Home',
+              color: pageIndex == 1 ? widget.navIconColor : Colors.grey,
+              size: widget.navIconSize,
+              icon: widget.navIcon2,
+            ),
+            BottomNav(
+              index: 0,
+              onTap: () {
+                changePage(2);
+              },
+              label: 'Home',
+              color: pageIndex == 2 ? widget.navIconColor : Colors.grey,
+              size: widget.navIconSize,
+              icon: widget.navIcon3,
+            ),
+            BottomNav(
+              index: 0,
+              onTap: () {
+                changePage(3);
+              },
+              label: 'Home',
+              color: pageIndex == 3 ? widget.navIconColor : Colors.grey,
+              size: widget.navIconSize,
+              icon: widget.navIcon4,
+            ),
+          ],
         ),
       ),
     );

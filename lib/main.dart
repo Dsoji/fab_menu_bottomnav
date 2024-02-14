@@ -4,7 +4,6 @@ import 'package:fab_menu_bottomnav/samplePages/helpView.dart';
 import 'package:fab_menu_bottomnav/samplePages/homeview.dart';
 import 'package:fab_menu_bottomnav/samplePages/profileView.dart';
 import 'package:fab_menu_bottomnav/samplePages/searchview.dart';
-import 'package:fab_menu_bottomnav/src/bar_item.dart';
 import 'package:fab_menu_bottomnav/src/navbar.dart';
 import 'package:flutter/material.dart';
 
@@ -21,47 +20,13 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
         title: 'Floating NavBar Example',
         home: NaviBar(
           fabColor: Colors.red,
           navBarColor: Colors.white,
           fabIconColor: Colors.green,
-          bottomNavItems: [
-            BottomNav(
-              color: Colors.pink,
-              index: 0,
-              onTap: () {},
-              label: 'home',
-              size: 24,
-              icon: Icons.home,
-            ),
-            BottomNav(
-              color: Colors.pink,
-              index: 1,
-              onTap: () {},
-              label: 'search',
-              size: 24,
-              icon: Icons.home,
-            ),
-            BottomNav(
-              color: Colors.pink,
-              index: 2,
-              onTap: () {},
-              label: 'help',
-              size: 24,
-              icon: Icons.home,
-            ),
-            BottomNav(
-              color: Colors.pink,
-              index: 3,
-              onTap: () {},
-              label: 'profile',
-              size: 24,
-              icon: Icons.home,
-            ),
-          ],
-          fabItems: const [
+          fabItems: [
             FabCont(
               icon: Icons.place,
               text: 'plane',
@@ -78,12 +43,18 @@ class _MyAppState extends State<MyApp> {
               color: Colors.purple,
             ),
           ],
-          routeList: const [
+          routeList: [
             Home(),
             Search(),
             Help(),
             Profile(),
           ],
+          navIconSize: 24,
+          navIcon1: Icons.home,
+          navIcon2: Icons.home,
+          navIcon3: Icons.home,
+          navIcon4: Icons.home,
+          navIconColor: Colors.black,
         ));
   }
 }
