@@ -14,6 +14,10 @@ class NaviBar extends StatefulWidget {
   final IconData navIcon2;
   final IconData navIcon3;
   final IconData navIcon4;
+  final String nav1Name;
+  final String nav2Name;
+  final String nav3Name;
+  final String nav4Name;
   // final String? email;
   // final String? firstName;
   // final String? lastName;
@@ -31,6 +35,10 @@ class NaviBar extends StatefulWidget {
     required this.navIcon3,
     required this.navIcon4,
     required this.navIconColor,
+    required this.nav1Name,
+    required this.nav2Name,
+    required this.nav3Name,
+    required this.nav4Name,
   });
 
   @override
@@ -101,7 +109,7 @@ class _NaviBarState extends State<NaviBar> {
               onTap: () {
                 changePage(1);
               },
-              label: 'Home',
+              label: widget.nav2Name,
               color: pageIndex == 1 ? widget.navIconColor : Colors.grey,
               size: widget.navIconSize,
               icon: widget.navIcon2,
@@ -111,7 +119,7 @@ class _NaviBarState extends State<NaviBar> {
               onTap: () {
                 changePage(2);
               },
-              label: 'Home',
+              label: widget.nav3Name,
               color: pageIndex == 2 ? widget.navIconColor : Colors.grey,
               size: widget.navIconSize,
               icon: widget.navIcon3,
@@ -121,7 +129,7 @@ class _NaviBarState extends State<NaviBar> {
               onTap: () {
                 changePage(3);
               },
-              label: 'Home',
+              label: widget.nav4Name,
               color: pageIndex == 3 ? widget.navIconColor : Colors.grey,
               size: widget.navIconSize,
               icon: widget.navIcon4,
