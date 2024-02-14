@@ -10,6 +10,7 @@ Bottom Navigation: Offers four navigation items using icons and labels.
 Screen Navigation: Navigates between four defined screens (replace with your own).
 Widgets:
 
+
 NaviBar: Manages the overall navigation bar and its components.
 BottomNav: Represents individual items in the bottom navigation bar.
 FabCont: Represents individual menu options within the FAB's popup menu.
@@ -17,6 +18,9 @@ FabCont: Represents individual menu options within the FAB's popup menu.
 ## Code Sample video:
 
 
+<p align='center'>
+    <img src="[https://raw.githubusercontent.com/jonbhanson/flutter_native_splash/master/splash_demo.gif](https://github.com/Dsoji/fab_menu_bottomnav/assets/80987998/8b80bf2a-cf56-4871-84b4-29f796c28c9a)" />
+</p>
 
 
 
