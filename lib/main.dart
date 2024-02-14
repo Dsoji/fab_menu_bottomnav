@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:fab_menu_bottomnav/samplePages/helpView.dart';
 import 'package:fab_menu_bottomnav/samplePages/homeview.dart';
 import 'package:fab_menu_bottomnav/samplePages/profileView.dart';
@@ -6,17 +8,17 @@ import 'package:fab_menu_bottomnav/src/bar_item.dart';
 import 'package:fab_menu_bottomnav/src/navbar.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  int _index = 0;
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -76,7 +78,7 @@ class _MyAppState extends State<MyApp> {
               color: Colors.purple,
             ),
           ],
-          routeList: [
+          routeList: const [
             Home(),
             Search(),
             Help(),
