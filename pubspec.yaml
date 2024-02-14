@@ -1,6 +1,6 @@
 name: fab_menu_bottomnav
 description: This is a bottom navigation bar htat has a floating action button positioned at the center, when you click the floating action button it pops out a menu.
-version: 0.0.6
+version: 0.0.7
 repository: https://github.com/Dsoji/fab_menu_bottomnav
 license: MIT
 
