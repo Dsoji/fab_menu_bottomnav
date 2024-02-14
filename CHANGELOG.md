@@ -1,3 +1,3 @@
-## 0.0.7
+## 0.0.8
 
-This is a bottom navigation bar htat has a floating action button positioned at the center, when you click the floating action button it pops out a menu.
+Sample build added
