@@ -1,10 +1,11 @@
-import 'package:fab_menu_bottomnav/example/samplePages/helpView.dart';
-import 'package:fab_menu_bottomnav/example/samplePages/homeview.dart';
-import 'package:fab_menu_bottomnav/example/samplePages/profileView.dart';
-import 'package:fab_menu_bottomnav/example/samplePages/searchview.dart';
 import 'package:fab_menu_bottomnav/fab_menu_bottomnav.dart';
 
 import 'package:flutter/material.dart';
+
+import 'samplePages/helpView.dart';
+import 'samplePages/homeview.dart';
+import 'samplePages/profileView.dart';
+import 'samplePages/searchview.dart';
 
 void main() {
   runApp(const MyApp());
