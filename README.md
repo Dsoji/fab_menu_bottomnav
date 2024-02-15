@@ -17,7 +17,10 @@ FabCont: Represents individual menu options within the FAB's popup menu.
 
 
 ## Code Sample video:
-![me](https://github.com/Dsoji/fab_menu_bottomnav/blob/main/sample.gif)
+
+<img src="https://github.com/Dsoji/fab_menu_bottomnav/raw/main/sample.gif"/>
+
+
 
 
 
